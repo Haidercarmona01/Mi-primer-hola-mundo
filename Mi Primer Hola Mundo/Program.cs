@@ -6,7 +6,7 @@ namespace Mi_Primer_Hola_Mundo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola Mundo!");
+            Console.WriteLine("Hola mundo como estan?!");
         }
     }
 }
