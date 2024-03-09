@@ -6,7 +6,9 @@ namespace vendedor_comision
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //declaracion de sueldo base y comision//
+            double Base = 80000;
+            double tasaComision = 0.10;
         }
     }
 }
