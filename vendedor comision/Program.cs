@@ -21,5 +21,14 @@ namespace vendedor_comision
             }
             //total de base mas comiciones//
             double total = Base + comisiones;
-        }
+
+            //operacion para calcular la mayor comision//
+            double mayorComision = 0;
+            foreach (double venta in ventas)
+            {
+                // 5 actualizacion para calcular comision si es igual a la venta mas la tasa de comision y verificar si cumple con el if si es igual la venta para la comision//
+                double comisionVenta = venta * tasaComision;
+                if (comisionVenta > mayorComision)
+                {
+                }
 }
