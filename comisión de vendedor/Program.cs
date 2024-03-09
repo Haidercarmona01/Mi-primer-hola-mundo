@@ -44,7 +44,7 @@ namespace vendedor_comision
                 totalVentas += venta;
             }
             bool objetivo = totalVentas >= 1000000;
-
+            //nota para actualizar//
 
             if (objetivo)
             {
