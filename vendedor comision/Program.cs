@@ -15,6 +15,11 @@ namespace vendedor_comision
 
             double comisiones = 0;
             foreach (double venta in ventas)
+            {
+                //operacion matematica para calcular comisiones//
+                comisiones += venta * tasaComision;
+            }
+            //total de base mas comiciones//
+            double total = Base + comisiones;
         }
-    }
 }
