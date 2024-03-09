@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>vendedor_comision</RootNamespace>
+    <RootNamespace>velocidad_de_trenes_salida</RootNamespace>
   </PropertyGroup>
 
 </Project>
