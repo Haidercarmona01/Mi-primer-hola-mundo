@@ -30,5 +30,37 @@ namespace vendedor_comision
                 double comisionVenta = venta * tasaComision;
                 if (comisionVenta > mayorComision)
                 {
+                    mayorComision = comisionVenta;
                 }
+            }
+
+
+            double promedioComisiones = comisiones / ventas.Length;
+
+
+            double totalVentas = 0;
+            foreach (double venta in ventas)
+            {
+                totalVentas += venta;
+            }
+            bool objetivo = totalVentas >= 1000000;
+
+
+            if (objetivo)
+            {
+                total += 100000;
+                //vamos a escribir  si cumplio con el odjetivo//
+                Console.WriteLine("¡Felicidades! Has superado el objetivo del mes y ganaste un beneficio extra de $100.000");
+            }
+            else
+            {
+                //vamos a escribir si no supero el objetivo//
+                Console.WriteLine("No has superado el objetivo del mes.");
+            }
+
+            //vamos a escribir el total de comisiones por venta//
+            Console.WriteLine($"Total de comisiones por las tres ventas: ${comisiones}");
+            //vamos a escribir el salario total alcanzado//
+            Console.WriteLine($"Salario total en el mes: ${total}");
+        }
 }
