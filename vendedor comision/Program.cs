@@ -7,11 +7,11 @@ namespace vendedor_comision
         static void Main(string[] args)
         {
             //declaracion de sueldo base y comision//
-            double Base = 2000;
+            double Base = 4000;
             double tasaComision = 0.10;
 
 
-            double[] ventas = { 600000, 300000, 200000 };
+            double[] ventas = { 600000, 400000, 200000 };
 
             double comisiones = 0;
             foreach (double venta in ventas)
@@ -62,5 +62,13 @@ namespace vendedor_comision
             Console.WriteLine($"Total de comisiones por las tres ventas: ${comisiones}");
             //vamos a escribir el salario total alcanzado//
             Console.WriteLine($"Salario total en el mes: ${total}");
+            // vamos a escribir cual fue la mayor comision//
+            Console.WriteLine($"Monto de la venta que generó la mayor comisión: ${mayorComision}");
+            //vamos a escrinir el promeddio de comisiones
+            Console.WriteLine($"Promedio de comisiones por venta: ${promedioComisiones}");
+
+            Console.ReadLine();
         }
+    }
+
 }
