@@ -32,7 +32,7 @@ namespace velocidad_de_trenes_salida
         static TimeSpan CalcularHoraEncuentro(double tiempo)
         {
             // Hora en que sale el tren
-            TimeSpan horaInicial = TimeSpan.FromHours(08); 
+            TimeSpan horaInicial = TimeSpan.FromHours(10); 
             return horaInicial + TimeSpan.FromHours(tiempo);
         }
     }
