@@ -33,7 +33,32 @@ class Program
                 Console.WriteLine($"Índice de Masa Corporal: {indiceMasaCorporal:F2}, Categoría: {categoriaIMC}");
             }
 
-      
+            Console.WriteLine("\n¿Desea calcular el IMC de más pacientes? (s/n)");
+        } while (Console.ReadLine().ToLower() == "s");
+    }
+    // la verificacion de pesos y altura
+    static double CalcularIMC(double masaCorporal, double altura)
+    {
+        return masaCorporal / (altura * altura);
+    }
+
+    static string ClasificarIMC(double indiceMasaCorporal)
+    {
+        if (indiceMasaCorporal < 18.5)
+        {
+            return "Peso insuficiente";
+        }
+        else if (indiceMasaCorporal >= 18.5 && indiceMasaCorporal <= 24.9)
+        {
+            return "Peso saludable";
+        }
+        else if (indiceMasaCorporal >= 25.0 && indiceMasaCorporal <= 29.9)
+        {
+            return "Sobrepeso";
+        }
+        else
+        {
+            return "Obesidad";
         }
     }
 }
