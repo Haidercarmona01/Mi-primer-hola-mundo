@@ -14,12 +14,30 @@ class Program
         //Esto crea un generador de números aleatorios que se
         //utilizará para elegir el número que los jugadores deben adivinar.
         Random random = new Random();
-        bool jugarOtraVez = true;
-
         //Inicializa una variable  Esta variable controla si el
         //juego debe repetirse después de que se complete una partida.
+        bool jugarOtraVez = true;
+
+        //Este bucle se ejecuta mientras la variable jugarOtraVez sea verdadera,
         while (jugarOtraVez)
-        { 
-     }
-}
+        {
+            //Estas líneas borran la consola y muestran un mensaje de bienvenida al juego.
+
+            Console.Clear();
+            Console.WriteLine("¡Bienvenido al juego 'Adivina el número'!");
+            Console.Write("Ingrese el número de jugadores (entre 2 y 4): ");
+
+            int numJugadores;
+            //int.TryPar convierte la precentacion en cadena y Utiliza un bucle while
+            //para leer la entrada del usuario y validar que sea un
+            //número entre 2 y 4. Si la entrada no es válida, se solicita al usuario que
+            //ingrese nuevamente un número válido.
+            while (!int.TryParse(Console.ReadLine(), out numJugadores) || numJugadores < 2 || numJugadores > 4)
+            {
+
+            }
+        }
+    }
+
+
 }
