@@ -68,16 +68,39 @@ class Program
                     int numeroIngresado;
                     while (!int.TryParse(Console.ReadLine(), out numeroIngresado))
                     {
-                        
+                        // muestra error si el numero no es valido 
+                        Console.Write("Error. Ingrese un número válido: ");
+                    }
+                    //permite los intentos necesarioas para alcanzar el juego 
+                    intentos++;
 
-                        }
+                    if (numeroIngresado < numAleatorio)
+                    {
+                        //muestra si el numero es mayor
+                        Console.WriteLine("MAYOR");
+                    } 
+
+                    else if (numeroIngresado > numAleatorio)
+                    {
+                        // verifica si el numero es menor 
+                        Console.WriteLine("MENOR");
+                    }
+                    else
+                    {
+                        //te indica cuando ganas 
+                        Console.WriteLine($"¡HAS GANADO, Jugador {jugador}!");
+                        juegoTerminado = true;
+                        break;
+                    }
+                }
             }
+            // muestra el numero aleatoreo elegido y pregunta si desea jugar o finalizar 
+            Console.WriteLine($"Número aleatorio: {numAleatorio}");
+            Console.WriteLine($"Intentos totales: {intentos}");
+            Console.Write("¿Desea jugar otra vez? (s/n): ");
+            jugarOtraVez = Console.ReadLine().Trim().ToLower() == "s";
         }
-    }
-
-
-
-
-
+        //si finaliza muestra mensaje de agradecimiento 
+        Console.WriteLine("¡Gracias por jugar!");
     }
 }
