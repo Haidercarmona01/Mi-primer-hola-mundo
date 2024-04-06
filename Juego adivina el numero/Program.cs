@@ -34,8 +34,21 @@ class Program
             //ingrese nuevamente un número válido.
             while (!int.TryParse(Console.ReadLine(), out numJugadores) || numJugadores < 2 || numJugadores > 4)
             {
-
+                //presenta en pantalla si el numero ingresado no esta en el rango
+                Console.Write("Error. Ingrese un número válido de jugadores (entre 2 y 4): ");
             }
+            //Genera un número aleatorio entre 0 y el valor de rangoMaximo
+            int numAleatorio;
+            //Utiliza una expresión switch para determinar el rango máximo en función del
+            //número de jugadores elegido por el usuario.
+            int rangoMaximo = numJugadores switch
+            {
+                2 => 50,
+                3 => 100,
+                4 => 200,
+                _ => 0 // Esto no debería ocurrir si el input está validado
+            };
+        
         }
     }
 
