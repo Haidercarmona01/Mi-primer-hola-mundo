@@ -22,7 +22,7 @@ class Program
             for (int i = 0; i < cantidadPacientes; i++)
             {
                 Console.WriteLine($"\nPaciente {i + 1}:");
-                Console.Write("Ingrese la masa corporal en kilogramos: ");
+                Console.Write("Ingrese la masa corporal en kg: ");
                 double masaCorporal = double.Parse(Console.ReadLine());
                 Console.Write("Ingrese la altura en metros: ");
                 double altura = double.Parse(Console.ReadLine());
