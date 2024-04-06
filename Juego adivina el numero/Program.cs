@@ -48,9 +48,36 @@ class Program
                 4 => 200,
                 _ => 0 // Esto no debería ocurrir si el input está validado
             };
-        
+            //// Genera un número entre 0 y rangoMaximo
+            numAleatorio = random.Next(rangoMaximo + 1);
+
+            //Estas variables rastrean el número de intentos y si el juego ha terminado.
+            int intentos = 0;
+            bool juegoTerminado = false;
+
+            //Comienza un bucle while para el juego actual,
+            //Este bucle se ejecuta mientras el juego no haya terminado.
+            while (!juegoTerminado)
+            {
+                // Este bucle se repite para cada jugador.
+                for (int jugador = 1; jugador <= numJugadores; jugador++)
+                {
+                    // esta impresion Solicita al jugador que adivine un número:
+                    Console.WriteLine($"Turno del Jugador {jugador}");
+                    Console.Write("Ingrese un número para adivinar: ");
+                    int numeroIngresado;
+                    while (!int.TryParse(Console.ReadLine(), out numeroIngresado))
+                    {
+                        
+
+                        }
+            }
         }
     }
 
 
+
+
+
+    }
 }
