@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Ejercicio_18_natillera</RootNamespace>
+    <RootNamespace>EMPLEADOS_POO</RootNamespace>
   </PropertyGroup>
 
 </Project>
